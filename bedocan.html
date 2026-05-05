@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>merhaba dünya</h1>
+<h2>hey</h2>
+
+<p>hepsinin isminin gelmesini bekle</p>
+
+<h2 id="demo"></h2>
+
+<script>
+var arr = ["ali", "ömer", "mehmet", "bedocan"];
+
+let text = "";
+for (let i = 0; i < arr.length; i++) {
+  text += arr[i] + "<br>";
+}
+
+
+document.getElementById("demo").innerHTML = text;
+setTimeout(myFunction, 3000);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love " +arr[i];
+}
+</script>
+
+</body>
+</html>
