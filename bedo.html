@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript fonksiyonları</h1>
+<h2>setTimeout() methodu</h2>
+
+<p id="demo">başla</p>
+
+<script>
+var arr = ['bedirhan', 'nazlıcan', 'ali', 'veli', 'ibrahim','a','b','c'];
+var sira = 0;
+function isimDegistirme(){
+ if(sira < arr.length){
+  document.getElementById("demo").innerHTML = 'i love ' +arr[sira];
+  
+  sira++;
+  setTimeout(isimDegistirme,1000);
+ }else{
+ document.getElementById("demo").innerHTML = "bitiş";
+ }
+}
+setTimeout(isimDegistirme,1000);
+</script>
+
+</body>
+</html>
